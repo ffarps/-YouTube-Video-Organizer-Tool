@@ -1,10 +1,10 @@
-# Ver-mais-tarde-youtube Markdown Converter
+# YouTube Video Organizer
 
-Converts YouTube-related Markdown files to structured JSON format for programmatic use.
+Organizes YouTube videos into categories and provides a REST API for programmatic use.
 
 ## Project Setup
 
-## Creating a Virtual Environment
+### Creating a Virtual Environment
 
 ```bash
 # Create virtual environment
@@ -22,8 +22,16 @@ source myenv/bin/activate
 venv\Scripts\activate
 ```
 
-## Running the Converter
+### Running the Converter
 
 ```bash
 # Execute the conversion script with your markdown file
 python md_to_json.py your_file.md
+```
+
+### Running the Application
+
+```bash
+# Run the FastAPI application
+uvicorn main:app --reload
+```
